@@ -6,14 +6,13 @@ import deved from "../public/myavatar.png";
 import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
+import web1 from "../public/aldeno1.png";
+import web2 from "../public/aldeno2.png";
+import web3 from "../public/aldeno3.png";
+import web4 from "../public/aldeno4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 import { useState } from "react";
-
 
 export default function Home() {
   const [darMode, setdarkMode] = useState(false);
@@ -34,7 +33,7 @@ export default function Home() {
                   onClick={() => {
                     setdarkMode(!darMode);
                   }}
-                  className=" cursor-pointer text-2xl"
+                  className=" cursor-pointer text-2xl dark:text-white"
                 />
               </li>
               <li>
@@ -73,13 +72,13 @@ export default function Home() {
             <AiFillLinkedin className="hover:text-gray-800 cursor-pointer" />
             <AiFillInstagram className="hover:text-gray-800 cursor-pointer" />
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
+          <div className="left-[-15px] sm:left-[0] relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image src={deved} layout="fill" objectFit="cover" />
           </div>
         </section>
         <section>
           <div>
-            <h3 className=" text-3xl py-1 dark:text-gray-400">
+            <h3 className=" text-center text-3xl mt-5 py-1 dark:text-gray-400">
               Services I offer
             </h3>
             <p className=" text-md py-2 leading-8 text-gray-800 dark:text-white text-justify">
@@ -118,66 +117,78 @@ export default function Home() {
               <h3 className=" text-lg font-medium pt-8 pb-2">
                 Beautiful Designs
               </h3>
-              <p className="py-2">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
-                porro quisquam tempore doloremque sit veniam earum corporis esse
-                numquam! Ipsam quisquam voluptate deserunt quia id eum, illum
-                consequatur beatae molestias.
+              <p className="py-2 text-[10px]">
+                Visually captivating and intuitively functional, this website
+                design impresses with its sleek and modern aesthetic,
+                harmoniously blending whitespace and vibrant colors. Thoughtful
+                organization, engaging imagery, and seamless responsiveness
+                ensure an immersive user experience that leaves a lasting
+                impression. With clear calls-to-action and captivating visuals,
+                this design effectively conveys the brand's message and
+                encourages user engagement.
               </p>
               <h4 className="py-4 text-teal-600">Design Tools I used</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
+              <p className="text-gray-800 py-1">Tailwind CSS</p>
+              <p className="text-gray-800 py-1">Canva</p>
               <p className="text-gray-800 py-1">Figma</p>
             </div>
             <div className="text-center flex flex-col items-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image src={code} width={100} height={100} />
               <h3 className=" text-lg font-medium pt-8 pb-2">
-                Beautiful Designs
+                Website Development
               </h3>
-              <p className="py-2">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
-                porro quisquam tempore doloremque sit veniam earum corporis esse
-                numquam! Ipsam quisquam voluptate deserunt quia id eum, illum
-                consequatur beatae molestias.
+              <p className="py-2 text-[10px]">
+                You can design and develop custom websites tailored to meet
+                clients' specific needs. This includes creating visually
+                appealing layouts, implementing intuitive navigation, and
+                integrating functionality using technologies like HTML, CSS,
+                JavaScript, and frameworks like React.js or Angular.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I used</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
+              <h4 className="py-4 text-teal-600">Technology I used</h4>
+              
+              <p className="text-gray-800 py-1">Next JS</p>
+              <p className="text-gray-800 py-1">Firebase</p>
+              <p className="text-gray-800 py-1">Node JS</p>
             </div>
             <div className="text-center flex flex-col items-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image src={consulting} width={100} height={100} />
               <h3 className=" text-lg font-medium pt-8 pb-2">
-                Beautiful Designs
+                Website Maintenance and Updates
               </h3>
-              <p className="py-2">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
-                porro quisquam tempore doloremque sit veniam earum corporis esse
-                numquam! Ipsam quisquam voluptate deserunt quia id eum, illum
-                consequatur beatae molestias.
+              <p className="py-2 text-[10px]">
+                Once a website is launched, you can offer ongoing maintenance
+                services, ensuring its smooth operation, security, and
+                compatibility with the latest web standards. This involves
+                monitoring performance, applying updates, resolving issues, and
+                optimizing the website for improved user experience. E-commerce
+                Solutions: If clients require an online store, you can
+                specialize in building e-commerce websites. This involves
+                integrating secure payment gateways, implementing product
+                catalogs, managing inventory, and optimizing the checkout
+                process to create a seamless online shopping experience.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I used</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
             </div>
           </div>
         </section>
         <section>
           <div className="">
-            <h3 className="text-3xl py-1 dark:text-gray-400">Portofolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
-              obcaecati laudantium aut numquam maiores mollitia sed facere sint
-              atque similique illo corrupti autem porro doloribus odio a,
-              temporibus neque quasi!
+            <h3 className="text-3xl py-1 dark:text-gray-400 text-center">
+              Personal project
+            </h3>
+            <p className="text-md py-2 leading-8 text-center text-gray-800 dark:text-white">
+              Personal Projects: As a passionate developer, I love working on
+              personal projects that allow me to showcase my creativity and
+              skills. Whether it's building a captivating portfolio website,
+              developing a sleek mobile app, or designing a unique web
+              application, I enjoy exploring new technologies and pushing my
+              boundaries to create something truly exceptional.
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
               <Image
                 src={web1}
-                className=" rounded-lg object-cover"
+                className=" rounded-lg object-cover shadow-2xl"
                 width={"100%"}
                 height={"100%"}
                 layout={"responsive"}
@@ -186,7 +197,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={web2}
-                className=" rounded-lg object-cover"
+                className=" rounded-lg object-cover shadow-2xl"
                 width={"100%"}
                 height={"100%"}
                 layout={"responsive"}
@@ -195,7 +206,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={web3}
-                className=" rounded-lg object-cover"
+                className=" rounded-lg object-cover shadow-2xl"
                 width={"100%"}
                 height={"100%"}
                 layout={"responsive"}
@@ -204,7 +215,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={web4}
-                className=" rounded-lg object-cover"
+                className=" rounded-lg object-cover shadow-2xl"
                 width={"100%"}
                 height={"100%"}
                 layout={"responsive"}
@@ -213,7 +224,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={web5}
-                className=" rounded-lg object-cover"
+                className=" rounded-lg object-cover shadow-2xl"
                 width={"100%"}
                 height={"100%"}
                 layout={"responsive"}
@@ -222,7 +233,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={web6}
-                className=" rounded-lg object-cover"
+                className=" rounded-lg object-cover shadow-2xl"
                 width={"100%"}
                 height={"100%"}
                 layout={"responsive"}
